@@ -1,0 +1,14 @@
+<!--pages/about/about.wxml-->
+
+<view class='page'>
+
+   <view class='header'>
+      <view class='sub_title'>WanAndroid V1.0</view>
+   </view>
+
+
+   <view class="weui-footer weui-footer_fixed-bottom">
+      <view class="weui-footer__text">Copyright 2023</view>
+   </view>
+
+</view>

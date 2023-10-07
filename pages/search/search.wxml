@@ -1,0 +1,32 @@
+<!--pages/about/about.wxml-->
+
+<view class="search">
+    <view class="input-bg">
+      <image src="/images/search.png"></image>
+      <input placeholder="请输入关键字" maxlength="20" value="{{content}}" bindinput="bindInput" bindconfirm="bindSearch"></input>
+      <image src="/images/delete.png" wx:if="{{content.length > 0}}" bindtap = "bindDelete"></image>
+    </view>
+    <view class="cancel" wx:if="{{showSearchResult}}" bindtap="bindCancel">取消</view>
+</view>
+
+<view class="empty-top"></view>
+
+<view wx:if="{{!showSearchResult}}">
+   <view class="search-hint" wx:if="{{searchHistoryList.length > 0}}">
+      <view class="search-wrapper">
+        <view class="search-title">搜索记录</view>
+        <view class="clear-record" bind:tap="bindClearRecord">清除记录</view>
+      </view>
+      
+      <my-button  hotkeyList="{{searchHistoryList}}" bindkey="bindRecord" isTitle="{{false}}"  my-border="my-border" my-hover="my-hover"></my-button>
+   </view>
+
+   <view class="search-hint">
+      <view class="search-title">热门搜索</view>
+      <my-button  hotkeyList="{{hotkeyList}}" bindkey="bindRecord" isTitle="{{false}}"  my-border="my-border" my-hover="my-hover"></my-button>
+   </view>
+</view>
+
+<view wx:if="{{showSearchResult}}">
+    <article articleList="{{searchList}}"></article>
+</view>

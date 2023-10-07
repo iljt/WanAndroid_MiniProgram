@@ -1,0 +1,7 @@
+{
+   "usingComponents": {
+    "my-button":"../../components/my-button/my-button",
+    "article":"../../components/article/article"
+   },
+   "navigationBarTitleText": "搜索"
+}

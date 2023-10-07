@@ -1,0 +1,14 @@
+<!--pages/tree/tree.wxml-->
+<view class="page">
+  <view class="item-info" wx:for="{{treeDataList}}" wx:key="*this">
+   <view class="text">{{item.name}}</view>
+   <view class="content">
+      <view class="hotkey" wx:for="{{treeDataList[index].children}}" wx:key="*this" bindtap="bindTree" data-cid="{{item.id}}" data-content="{{item.name}}"  hover-start-time="0" hover-stay-time="100">{{item.name}}
+     </view>
+  </view>
+  <view class="line"></view>   
+
+  </view>
+
+
+</view>

@@ -1,0 +1,6 @@
+<view class="register-wrapper">
+    <input class="text-input" type="text" maxlength="20" placeholder="请输入用户名" bindinput="bindNameInput"></input>
+    <input class="text-input" password="{{true}}" maxlength="20" placeholder="请输入密码" bindinput="bindPwdInput"></input>
+    <input class="text-input" password="{{true}}" maxlength="20" placeholder="请再次输入密码" bindinput="bindRePwdInput"></input>
+    <view class="register" hover-class="hover" bind:tap="bindRegister" hover-start-time="0" hover-stay-time="100">注册</view>
+</view>

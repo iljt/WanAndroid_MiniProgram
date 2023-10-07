@@ -1,0 +1,12 @@
+<view class="article-wrapper" wx:for="{{collectList}}" wx:key="*this" data-originId='{{item.originId}}' data-url="{{item.link}}" bind:longtap="bindLongClick" bind:tap="itemClick"  data-id="{{item.id}}" data-title='{{item.title}}'>
+  <view class="article-info">
+    <view class="author">{{item.author}}</view>
+    <view class="article-text">{{item.chapterName}}</view>
+  </view>
+  <view class="title">{{item.title}}</view> 
+  <view class="article-info">
+    <view class="article-text">{{item.niceDate}}</view>
+  </view>
+
+</view>
+<view class="center" wx:if="{{collectList.length==0}}">{{emptyContent}}</view>

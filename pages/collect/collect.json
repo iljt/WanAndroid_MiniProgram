@@ -1,0 +1,6 @@
+{
+   "usingComponents": {},
+   "navigationBarTitleText": "收藏",
+   "enablePullDownRefresh": true,
+   "onReachBottomDistance": 30
+}

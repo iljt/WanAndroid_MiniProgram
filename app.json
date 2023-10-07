@@ -1,0 +1,66 @@
+{
+	"pages": [
+		"pages/index/index",
+		"pages/navi/navi",
+		"pages/user/user",
+		"pages/logs/logs",
+		"pages/collect/collect",
+		"pages/project/project",
+		"pages/tree/tree",
+		"pages/treeDetail/treeDetail",
+    "pages/about/about",
+    "pages/search/search",
+		"pages/web/web",
+		"pages/login/login",
+		"pages/register/register"
+	],
+	"tabBar": {
+		"color": "#999",
+		"selectedColor": "#4CAF50",
+		"backgroundColor": "#fff",
+		"borderStyle": "black",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "images/index_normal.png",
+				"selectedIconPath": "images/index_selected.png"
+			},
+			{
+				"pagePath": "pages/navi/navi",
+				"text": "导航",
+				"iconPath": "images/navi_normal.png",
+				"selectedIconPath": "images/navi_selected.png"
+			},
+			{
+				"pagePath": "pages/project/project",
+				"text": "项目",
+				"iconPath": "images/proj_normal.png",
+				"selectedIconPath": "images/proj_selected.png"
+			},
+			{
+				"pagePath": "pages/tree/tree",
+				"text": "体系",
+				"iconPath": "images/tree_normal.png",
+				"selectedIconPath": "images/tree_selected.png"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"text": "我的",
+				"iconPath": "images/my_normal.png",
+				"selectedIconPath": "images/my_selected.png"
+			}
+		]
+	},
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "首页",
+		"navigationBarTextStyle": "black"
+	},
+	"style": "v2",
+	"sitemapLocation": "sitemap.json",
+	"miniApp": {
+		"useAuthorizePage": true
+	}
+}
